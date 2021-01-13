@@ -22,8 +22,8 @@ import (
 	"net"
 	"strings"
 
-	"github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
-	"github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 
 	"google.golang.org/grpc/credentials"
 

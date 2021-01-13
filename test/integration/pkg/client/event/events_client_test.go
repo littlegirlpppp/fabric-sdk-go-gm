@@ -10,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/channel"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/event"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/events/deliverclient/seek"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/channel"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/event"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/deliverclient/seek"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
 )
 
 func TestDefaultEventClient(t *testing.T) {

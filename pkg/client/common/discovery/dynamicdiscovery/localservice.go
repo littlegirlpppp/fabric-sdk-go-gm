@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package dynamicdiscovery
 
 import (
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/multi"
-	coptions "github.com/jxu86/fabric-sdk-go-gm/pkg/common/options"
-	contextAPI "github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	reqContext "github.com/jxu86/fabric-sdk-go-gm/pkg/context"
-	fabdiscovery "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/discovery"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/multi"
+	coptions "github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
+	contextAPI "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	reqContext "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
+	fabdiscovery "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/discovery"
 	"github.com/pkg/errors"
 )
 

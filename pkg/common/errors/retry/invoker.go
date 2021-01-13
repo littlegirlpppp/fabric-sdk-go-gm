@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package retry
 
 import (
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/multi"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/multi"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
 )
 
 var logger = logging.NewLogger("fabsdk/common")

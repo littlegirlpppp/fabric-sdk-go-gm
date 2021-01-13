@@ -23,14 +23,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config/endpoint"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config/lookup"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/mocks"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/comm"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/util/pathvar"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/endpoint"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/lookup"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/comm"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/pathvar"
 )
 
 const (

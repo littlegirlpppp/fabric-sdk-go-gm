@@ -27,8 +27,8 @@ import (
 	"strings"
 
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/chaincode/platforms/util"
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkinternal/ccmetadata"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/chaincode/platforms/util"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkinternal/ccmetadata"
 	"github.com/pkg/errors"
 )
 

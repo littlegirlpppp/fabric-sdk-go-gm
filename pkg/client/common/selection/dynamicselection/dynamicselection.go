@@ -9,16 +9,16 @@ package dynamicselection
 import (
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/util/concurrent/lazyref"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/concurrent/lazyref"
 
-	copts "github.com/jxu86/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
+	copts "github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/selection/dynamicselection/pgresolver"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/selection/options"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/selection/dynamicselection/pgresolver"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/selection/options"
 )
 
 const defaultCacheTimeout = 30 * time.Minute

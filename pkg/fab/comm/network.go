@@ -9,7 +9,7 @@ package comm
 import (
 	"strings"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

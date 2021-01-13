@@ -9,7 +9,7 @@ SPDX-License-Identifier: Apache-2.0
 package channel
 
 import (
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/channel/invoke"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/channel/invoke"
 )
 
 func callQuery(cc *Client, request Request, options ...RequestOption) (Response, error) {

@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/keyvaluestore"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/keyvaluestore"
 	"github.com/pkg/errors"
 )
 

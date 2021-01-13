@@ -15,8 +15,8 @@ import (
 	"crypto/x509"
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/metrics"
-	flogging "github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/metrics"
+	flogging "github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkpatch/logbridge"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"
 )

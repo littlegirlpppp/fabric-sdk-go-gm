@@ -9,7 +9,7 @@ package resource
 import (
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

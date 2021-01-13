@@ -9,22 +9,22 @@ package expiredpeer
 import (
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	mspclient "github.com/jxu86/fabric-sdk-go-gm/pkg/client/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/resmgmt"
+	mspclient "github.com/sunbo/fabric-sdk-go-gm/pkg/client/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/resmgmt"
 
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config/lookup"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/mocks"
-	fabImpl "github.com/jxu86/fabric-sdk-go-gm/pkg/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/lookup"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/mocks"
+	fabImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/fab"
 )
 
 const (

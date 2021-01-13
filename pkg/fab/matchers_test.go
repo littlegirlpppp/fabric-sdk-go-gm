@@ -11,12 +11,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
 )
 
 const (

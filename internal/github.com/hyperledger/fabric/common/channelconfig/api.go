@@ -16,9 +16,9 @@ import (
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	ab "github.com/hyperledger/fabric-protos-go/orderer"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/configtx"
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/policies"
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/configtx"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/policies"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/msp"
 )
 
 // Org stores the common organizational config

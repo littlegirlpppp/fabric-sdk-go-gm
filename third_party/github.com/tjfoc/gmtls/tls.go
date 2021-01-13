@@ -29,7 +29,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 // Server returns a new TLS server side connection

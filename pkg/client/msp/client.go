@@ -18,14 +18,14 @@ package msp
 import (
 	"fmt"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
 
 	"strings"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	mspctx "github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/msp"
-	mspapi "github.com/jxu86/fabric-sdk-go-gm/pkg/msp/api"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	mspctx "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/msp"
+	mspapi "github.com/sunbo/fabric-sdk-go-gm/pkg/msp/api"
 	"github.com/pkg/errors"
 )
 

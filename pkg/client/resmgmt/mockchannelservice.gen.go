@@ -5,8 +5,8 @@ import (
 	reqContext "context"
 	"sync"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
 )
 
 type MockChannelService struct {

@@ -15,7 +15,7 @@ import (
 	"regexp"
 
 	"github.com/pkg/errors"
-	"github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 // IsTLSEnabled is a generic function that expects a URL and verifies if it has

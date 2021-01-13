@@ -12,8 +12,8 @@ import (
 	"os"
 	"testing"
 
-	eventmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/events/mocks"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
+	eventmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"google.golang.org/grpc"
 )

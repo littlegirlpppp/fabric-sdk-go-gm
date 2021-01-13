@@ -17,15 +17,15 @@ import (
 	lb "github.com/hyperledger/fabric-protos-go/peer/lifecycle"
 	"github.com/pkg/errors"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/multi"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	contextImpl "github.com/jxu86/fabric-sdk-go-gm/pkg/context"
-	lifecyclepkg "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/ccpackager/lifecycle"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/peer"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/resource"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/txn"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/multi"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	contextImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
+	lifecyclepkg "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/ccpackager/lifecycle"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/peer"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/resource"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/txn"
 )
 
 //go:generate counterfeiter -o mocklifecycleresource.gen.go -fake-name MockLifecycleResource . lifecycleResource

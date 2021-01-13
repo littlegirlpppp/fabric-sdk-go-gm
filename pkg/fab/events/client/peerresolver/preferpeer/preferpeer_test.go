@@ -9,11 +9,11 @@ package preferpeer
 import (
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	clientmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/events/client/mocks"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/minblockheight"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	clientmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/minblockheight"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

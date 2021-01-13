@@ -11,17 +11,17 @@ import (
 
 	"fmt"
 
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
-	bccspSw "github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/factory/sw"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/channel"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/wrapper"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk/factory/defcore"
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration"
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
+	bccspSw "github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/factory/sw"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/channel"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/wrapper"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/factory/defcore"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 	"github.com/stretchr/testify/require"
 )
 

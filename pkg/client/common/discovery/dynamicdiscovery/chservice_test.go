@@ -9,18 +9,18 @@ SPDX-License-Identifier: Apache-2.0
 package dynamicdiscovery
 
 import (
-	fabDiscovery "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/discovery"
+	fabDiscovery "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/discovery"
 	"github.com/pkg/errors"
 	"testing"
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/discovery"
-	contextAPI "github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	pfab "github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	discmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/discovery/mocks"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	mspmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/discovery"
+	contextAPI "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	pfab "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	discmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/discovery/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	mspmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

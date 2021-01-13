@@ -9,14 +9,14 @@ package preferpeer
 import (
 	"strings"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/minblockheight"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/preferorg"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/events/service"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/minblockheight"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/preferorg"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/service"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

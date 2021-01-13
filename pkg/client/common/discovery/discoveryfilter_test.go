@@ -10,13 +10,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/discovery/staticdiscovery"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config"
-	fabImpl "github.com/jxu86/fabric-sdk-go-gm/pkg/fab"
-	mocks "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/discovery/staticdiscovery"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
+	fabImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/fab"
+	mocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 )
 
 const configFile = "config_test.yaml"

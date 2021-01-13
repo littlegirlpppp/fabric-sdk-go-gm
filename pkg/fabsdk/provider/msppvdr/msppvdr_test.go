@@ -10,13 +10,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk/factory/defcore"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/factory/defcore"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 	"github.com/stretchr/testify/assert"
 )
 

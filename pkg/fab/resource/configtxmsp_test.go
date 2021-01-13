@@ -15,9 +15,9 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 
-	mspcfg "github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/msp"
+	mspcfg "github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/msp"
 	"github.com/hyperledger/fabric-protos-go/msp"
 	"github.com/stretchr/testify/require"
 )

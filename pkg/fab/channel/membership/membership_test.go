@@ -30,10 +30,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkpatch/keyutil"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config/comm/tls"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkpatch/keyutil"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/comm/tls"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 )
 
 var pathRevokeCaRoot = filepath.Join(metadata.GetProjectPath(), metadata.CryptoConfigPath, "peerOrganizations/org1.example.com/ca/")

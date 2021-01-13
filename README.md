@@ -1,13 +1,13 @@
 # 基于v1.0.0-beta3版本的国密改造
 # Hyperledger Fabric Client SDK for Go
 
-[![Release](https://img.shields.io/github/release/jxu86/fabric-sdk-go-gm.svg?style=flat-square)](https://github.com/jxu86/fabric-sdk-go-gm/releases/latest)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://raw.githubusercontent.com/jxu86/fabric-sdk-go-gm/master/LICENSE)
-[![GoDoc](https://godoc.org/github.com/jxu86/fabric-sdk-go-gm?status.svg)](https://godoc.org/github.com/jxu86/fabric-sdk-go-gm)
+[![Release](https://img.shields.io/github/release/sunbo/fabric-sdk-go-gm.svg?style=flat-square)](https://github.com/sunbo/fabric-sdk-go-gm/releases/latest)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://raw.githubusercontent.com/sunbo/fabric-sdk-go-gm/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/sunbo/fabric-sdk-go-gm?status.svg)](https://godoc.org/github.com/sunbo/fabric-sdk-go-gm)
 
-[![Build Status](https://dev.azure.com/jxu86/fabric-sdk-go-gm/_apis/build/status/hyperledger.fabric-sdk-go?branchName=master)](https://dev.azure.com/jxu86/fabric-sdk-go-gm/_build/latest?definitionId=19&branchName=master)
-[![codecov](https://codecov.io/gh/jxu86/fabric-sdk-go-gm/branch/master/graph/badge.svg)](https://codecov.io/gh/jxu86/fabric-sdk-go-gm)
-[![Go Report Card](https://goreportcard.com/badge/github.com/jxu86/fabric-sdk-go-gm)](https://goreportcard.com/report/github.com/jxu86/fabric-sdk-go-gm)
+[![Build Status](https://dev.azure.com/sunbo/fabric-sdk-go-gm/_apis/build/status/hyperledger.fabric-sdk-go?branchName=master)](https://dev.azure.com/sunbo/fabric-sdk-go-gm/_build/latest?definitionId=19&branchName=master)
+[![codecov](https://codecov.io/gh/sunbo/fabric-sdk-go-gm/branch/master/graph/badge.svg)](https://codecov.io/gh/sunbo/fabric-sdk-go-gm)
+[![Go Report Card](https://goreportcard.com/badge/github.com/sunbo/fabric-sdk-go-gm)](https://goreportcard.com/report/github.com/sunbo/fabric-sdk-go-gm)
 
 This SDK enables Go developers to build solutions that interact with [Hyperledger Fabric](http://hyperledger-fabric.readthedocs.io/en/latest/).
 
@@ -16,14 +16,14 @@ This SDK enables Go developers to build solutions that interact with [Hyperledge
 Obtain the client SDK packages for Fabric and Fabric CA.
 
 ```bash
-go get github.com/jxu86/fabric-sdk-go-gm
+go get github.com/sunbo/fabric-sdk-go-gm
 ```
 
 You're good to go, happy coding! Check out the examples for usage demonstrations.
 
 ### Documentation
 
-SDK documentation can be viewed at [GoDoc](https://godoc.org/github.com/jxu86/fabric-sdk-go-gm).
+SDK documentation can be viewed at [GoDoc](https://godoc.org/github.com/sunbo/fabric-sdk-go-gm).
 
 The packages intended for end developer usage are within the pkg/client folder along with the main SDK package (pkg/fabsdk).
 
@@ -67,7 +67,7 @@ When the 'prev' code level is updated, the last tested fabric-sdk-go commit or t
 Obtain the client SDK packages for Fabric and Fabric CA.
 
 ```bash
-git clone https://github.com/jxu86/fabric-sdk-go-gm.git
+git clone https://github.com/sunbo/fabric-sdk-go-gm.git
 ```
 
 ```bash

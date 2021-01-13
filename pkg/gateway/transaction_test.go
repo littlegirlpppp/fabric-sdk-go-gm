@@ -15,12 +15,12 @@ import (
 	"time"
 
 	"github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/channel/invoke"
-	txnmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/mocks"
-	cpc "github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	fcmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	mspmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/channel/invoke"
+	txnmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/mocks"
+	cpc "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	fcmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	mspmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
 )
 
 const (

@@ -11,19 +11,19 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config/endpoint"
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/endpoint"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 
 	// "crypto/x509"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
-	commtls "github.com/jxu86/fabric-sdk-go-gm/pkg/core/config/comm/tls"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
+	commtls "github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/comm/tls"
 	"github.com/pkg/errors"
-	"github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
-	tls "github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	tls "github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 )
 
 // MockConfig ...

@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/resource/genesisconfig"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/resource/genesisconfig"
 	"github.com/stretchr/testify/require"
 )
 

@@ -11,8 +11,8 @@ import (
 
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	fcmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	fcmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
 	"github.com/stretchr/testify/assert"
 )
 

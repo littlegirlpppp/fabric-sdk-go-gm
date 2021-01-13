@@ -9,8 +9,8 @@ package dynamicselection
 import (
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	mspmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	mspmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

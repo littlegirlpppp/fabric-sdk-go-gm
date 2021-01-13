@@ -11,13 +11,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	cryptosuiteimpl "github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/sw"
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite"
+	cryptosuiteimpl "github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/sw"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 )
 
 func TestUserMethods(t *testing.T) {

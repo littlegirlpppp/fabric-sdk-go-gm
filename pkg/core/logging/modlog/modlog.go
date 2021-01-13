@@ -17,8 +17,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/logging/api"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/logging/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/api"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/metadata"
 )
 
 var rwmutex = &sync.RWMutex{}
@@ -465,12 +465,12 @@ func (l *Log) getCallerInfo(opts *loggerOpts) string {
 
 func hasLoggerFnPrefix(pkgPath string, fnName string) bool {
 	const (
-		loggingAPIPath = "github.com/jxu86/fabric-sdk-go-gm/pkg/core/logging/"
+		loggingAPIPath = "github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/"
 		loggingAPIPkg  = "api" // Go < 1.12
 		modlogFnPrefix = "modlog.(*Log)."
-		loggingPath    = "github.com/jxu86/fabric-sdk-go-gm/pkg/common/"
+		loggingPath    = "github.com/sunbo/fabric-sdk-go-gm/pkg/common/"
 		loggingPkg     = "logging"
-		logBridgePath  = "github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
+		logBridgePath  = "github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
 		logBridgePkg   = "logbridge"
 	)
 

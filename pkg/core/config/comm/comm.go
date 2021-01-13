@@ -11,11 +11,11 @@ import (
 
 	// "crypto/x509"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite"
 	"github.com/pkg/errors"
-	"github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
-	tls "github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	tls "github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 )
 
 // TLSConfig returns the appropriate config for TLS including the root CAs,

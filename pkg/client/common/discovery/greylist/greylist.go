@@ -10,10 +10,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config/endpoint"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/endpoint"
 )
 
 var logger = logging.NewLogger("fabsdk/client")

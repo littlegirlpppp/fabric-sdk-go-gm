@@ -12,10 +12,10 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/pkg/errors"
-	tls "github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
-	"github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	tls "github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 // GoodCert is a mock of a good certificate

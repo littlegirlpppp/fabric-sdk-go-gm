@@ -15,10 +15,10 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/verifier"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/verifier"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

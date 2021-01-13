@@ -8,7 +8,7 @@ package httptransport
 
 import (
 	"context"
-	tls "github.com/jxu86/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	tls "github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 	"net"
 	"net/textproto"
 	"reflect"

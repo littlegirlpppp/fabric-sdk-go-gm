@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	fcmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	mspmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	fcmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	mspmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
 	"github.com/stretchr/testify/assert"
 )
 

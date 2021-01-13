@@ -13,15 +13,15 @@ import (
 
 	"encoding/hex"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	mspctx "github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/sw"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk"
-	mspimpl "github.com/jxu86/fabric-sdk-go-gm/pkg/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	mspctx "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/sw"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
+	mspimpl "github.com/sunbo/fabric-sdk-go-gm/pkg/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
 )
 
 // TestWithCustomStores demonstrates the usage of custom key and cert stores

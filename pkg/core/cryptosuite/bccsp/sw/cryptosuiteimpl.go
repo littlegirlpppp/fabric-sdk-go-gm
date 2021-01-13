@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package sw
 
 import (
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
-	bccspSw "github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/factory/sw"
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/sw"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/wrapper"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
+	bccspSw "github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/factory/sw"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/sw"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/wrapper"
 	"github.com/pkg/errors"
 )
 

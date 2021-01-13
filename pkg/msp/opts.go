@@ -7,8 +7,8 @@ SPDX-License-Identifier: Apache-2.0
 package msp
 
 import (
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/msp"
-	commtls "github.com/jxu86/fabric-sdk-go-gm/pkg/core/config/comm/tls"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
+	commtls "github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/comm/tls"
 	"github.com/pkg/errors"
 )
 

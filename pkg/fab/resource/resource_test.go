@@ -14,17 +14,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	contextImpl "github.com/jxu86/fabric-sdk-go-gm/pkg/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/peer"
-	mspmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	contextImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/peer"
+	mspmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 	"github.com/pkg/errors"
 )
 

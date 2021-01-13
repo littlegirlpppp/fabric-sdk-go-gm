@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
 )
 
 const (

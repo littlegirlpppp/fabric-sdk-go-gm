@@ -9,7 +9,7 @@ package lazyref
 import (
 	"time"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
 )
 
 // WithIdleExpiration sets the idle-time expiration for the reference.

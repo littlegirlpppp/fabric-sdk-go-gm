@@ -9,11 +9,11 @@ package defcore
 import (
 	"testing"
 
-	cryptosuitewrapper "github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/wrapper"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/logging/modlog"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	signingMgr "github.com/jxu86/fabric-sdk-go-gm/pkg/fab/signingmgr"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk/provider/fabpvdr"
+	cryptosuitewrapper "github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/wrapper"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/modlog"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	signingMgr "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/signingmgr"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/provider/fabpvdr"
 )
 
 func TestCreateCryptoSuiteProvider(t *testing.T) {

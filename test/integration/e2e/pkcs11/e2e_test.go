@@ -9,14 +9,14 @@ package pkcs11
 import (
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config"
-	cryptosuite "github.com/jxu86/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/pkcs11"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk/factory/defcore"
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration/e2e"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
+	cryptosuite "github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/pkcs11"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/factory/defcore"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration/e2e"
 )
 
 const (

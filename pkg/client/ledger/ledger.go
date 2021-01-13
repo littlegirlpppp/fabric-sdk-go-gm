@@ -22,19 +22,19 @@ import (
 
 	"github.com/golang/protobuf/proto"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/discovery"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/filter"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/verifier"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/discovery"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/filter"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/verifier"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/chconfig"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/chconfig"
 
-	contextImpl "github.com/jxu86/fabric-sdk-go-gm/pkg/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/channel"
+	contextImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/channel"
 	"github.com/pkg/errors"
 )
 

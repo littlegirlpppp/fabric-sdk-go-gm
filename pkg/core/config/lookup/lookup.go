@@ -11,7 +11,7 @@ import (
 
 	"strings"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
 	"github.com/mitchellh/mapstructure"
 	"github.com/spf13/cast"
 )

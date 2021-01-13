@@ -12,20 +12,20 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	"github.com/jxu86/fabric-sdk-go-gm/test/metadata"
+	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/config/lookup"
-	mocksConfig "github.com/jxu86/fabric-sdk-go-gm/pkg/core/mocks"
-	fabImpl "github.com/jxu86/fabric-sdk-go-gm/pkg/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/txn"
-	mspmocks "github.com/jxu86/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/lookup"
+	mocksConfig "github.com/sunbo/fabric-sdk-go-gm/pkg/core/mocks"
+	fabImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/txn"
+	mspmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
 )
 
 func TestCreateTxnID(t *testing.T) {

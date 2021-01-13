@@ -11,10 +11,10 @@ import (
 
 	"fmt"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/msp"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/msp"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
 	"github.com/stretchr/testify/assert"
 )
 

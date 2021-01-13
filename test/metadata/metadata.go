@@ -17,7 +17,7 @@ var CryptoConfigPath = "test/fixtures/fabric/v1/crypto-config"
 var SDKConfigPath = "test/fixtures/config"
 
 // Project is the Go project name relative to the Go Path
-var Project = "github.com/jxu86/fabric-sdk-go-gm"
+var Project = "github.com/sunbo/fabric-sdk-go-gm"
 
 // ProjectPath is the path to the source of fabric-sdk-go
 var ProjectPath = ""

@@ -11,14 +11,14 @@ package provider
 import (
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/client/common/discovery/dynamicdiscovery"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	contextImpl "github.com/jxu86/fabric-sdk-go-gm/pkg/context"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk/factory/defsvc"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk/provider/chpvdr"
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/discovery/dynamicdiscovery"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	contextImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/factory/defsvc"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/provider/chpvdr"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
 	"github.com/stretchr/testify/require"
 )
 

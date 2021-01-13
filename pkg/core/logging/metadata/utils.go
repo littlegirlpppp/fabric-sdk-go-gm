@@ -10,7 +10,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/core/logging/api"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/api"
 )
 
 //Log level names in string

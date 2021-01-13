@@ -8,13 +8,13 @@ package resmgmt
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fab/txn"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/txn"
 	"github.com/pkg/errors"
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/protoutil"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/protoutil"
 )
 
 const (

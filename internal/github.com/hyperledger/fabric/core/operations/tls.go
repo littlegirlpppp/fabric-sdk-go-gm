@@ -15,7 +15,7 @@ import (
 	"crypto/x509"
 	"io/ioutil"
 
-	"github.com/jxu86/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkinternal/pkg/comm"
+	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkinternal/pkg/comm"
 )
 
 type TLS struct {

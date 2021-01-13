@@ -8,9 +8,9 @@ package resmgmt
 import (
 	"testing"
 
-	"github.com/jxu86/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration"
-	"github.com/jxu86/fabric-sdk-go-gm/test/integration/util/runner"
+	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
+	"github.com/sunbo/fabric-sdk-go-gm/test/integration/util/runner"
 	"github.com/stretchr/testify/require"
 )
 
