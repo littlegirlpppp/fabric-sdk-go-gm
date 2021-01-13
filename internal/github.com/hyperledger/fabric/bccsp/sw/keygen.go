@@ -26,7 +26,7 @@ import (
 	"crypto/rand"
 	"fmt"
 
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
 )
 
 type ecdsaKeyGenerator struct {

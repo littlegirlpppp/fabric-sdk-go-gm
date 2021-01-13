@@ -23,7 +23,7 @@ package sw
 import (
 	"hash"
 
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
 )
 
 type hasher struct {

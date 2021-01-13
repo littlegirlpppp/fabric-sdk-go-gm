@@ -3,7 +3,7 @@ package gm
 import (
 	"errors"
 
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
 )
 //todo:国密 gosdk：增加gm
 //定义国密 Key的驱动 ，实现 KeyDeriver 接口

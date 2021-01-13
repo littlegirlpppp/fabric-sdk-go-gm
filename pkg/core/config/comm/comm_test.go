@@ -22,7 +22,7 @@ import (
 	"crypto/x509"
 
 	"github.com/golang/mock/gomock"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -9,10 +9,10 @@ package mocks
 import (
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	contextImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/txn"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	contextImpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/txn"
 	"github.com/pkg/errors"
 )
 

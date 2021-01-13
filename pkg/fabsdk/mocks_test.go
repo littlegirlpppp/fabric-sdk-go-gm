@@ -9,17 +9,17 @@ SPDX-License-Identifier: Apache-2.0
 package fabsdk
 
 import (
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/api"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/api"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/modlog"
-	fabImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/fab"
-	sdkApi "github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/api"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/factory/defcore"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/factory/defmsp"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/factory/defsvc"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/cryptosuite"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/modlog"
+	fabImpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab"
+	sdkApi "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/api"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/factory/defcore"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/factory/defmsp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/factory/defsvc"
 	"github.com/pkg/errors"
 )
 

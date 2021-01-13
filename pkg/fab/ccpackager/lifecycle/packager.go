@@ -21,9 +21,9 @@ import (
 	"strings"
 
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/util"
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/chaincode/persistence"
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkinternal/peer/packaging"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/common/util"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/chaincode/persistence"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkinternal/peer/packaging"
 	"github.com/pkg/errors"
 )
 

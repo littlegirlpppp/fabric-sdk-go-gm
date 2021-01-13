@@ -10,10 +10,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	sdkCtx "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	sdkCtx "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/mocks"
 )
 
 func Example() {

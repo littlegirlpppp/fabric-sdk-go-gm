@@ -12,9 +12,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	commtls "github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/comm/tls"
-	tls "github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	commtls "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm/tls"
+	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 )
 
 // EndpointConfigOptions represents EndpointConfig interface with overridable interface functions

@@ -17,12 +17,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	txnmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/mocks"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	fcmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
-	mspmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	txnmocks "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	fcmocks "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/mocks"
+	mspmocks "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
 

@@ -15,23 +15,23 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/multi"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	commtls "github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/comm/tls"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/cryptoutil"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/endpoint"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/lookup"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/pathvar"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/multi"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	commtls "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm/tls"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/cryptoutil"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/endpoint"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/lookup"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/cryptosuite"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/pathvar"
 	"github.com/mitchellh/mapstructure"
 	"github.com/pkg/errors"
 	grpcCodes "google.golang.org/grpc/codes"
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
-	tls "github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")
@@ -1847,7 +1847,7 @@ func detectDeprecatedNetworkConfig(endpointConfig *EndpointConfig) {
 	for _, v := range endpointConfig.networkConfig.Channels {
 		if len(v.Orderers) > 0 {
 			logger.Warn("Getting orderers from endpoint config channels.orderer is deprecated, use entity matchers to override orderer configuration")
-			logger.Warn("visit https://github.com/sunbo/fabric-sdk-go-gm/blob/master/test/fixtures/config/overrides/local_entity_matchers.yaml for samples")
+			logger.Warn("visit https://github.com/littlegirlpppp/fabric-sdk-go-gm/blob/master/test/fixtures/config/overrides/local_entity_matchers.yaml for samples")
 			break
 		}
 	}

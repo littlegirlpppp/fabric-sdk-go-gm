@@ -20,8 +20,8 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/hyperledger/fabric-protos-go/discovery"
 	"github.com/hyperledger/fabric-protos-go/msp"
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/discovery/protoext"
-	gprotoext "github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/gossip/protoext"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/discovery/protoext"
+	gprotoext "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/gossip/protoext"
 	"github.com/pkg/errors"
 )
 

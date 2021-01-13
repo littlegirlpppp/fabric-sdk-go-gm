@@ -9,8 +9,8 @@ package fab
 import (
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/endpoint"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/endpoint"
 )
 
 // ClientConfig provides the definition of the client configuration

@@ -14,7 +14,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/msp"
 	"github.com/pkg/errors"
 )
 

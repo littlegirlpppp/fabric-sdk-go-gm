@@ -11,7 +11,7 @@ Please review third_party pinning scripts and patches for more details.
 package msp
 
 import (
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
 	"github.com/pkg/errors"
 )
 

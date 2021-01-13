@@ -10,11 +10,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
-	fabImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
-	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config"
+	fabImpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/metadata"
 	"github.com/stretchr/testify/assert"
 )
 

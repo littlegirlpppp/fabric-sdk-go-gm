@@ -7,9 +7,9 @@ import (
 	"net"
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls/gmcredentials/echo"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls/gmcredentials/echo"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )

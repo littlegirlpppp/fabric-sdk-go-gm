@@ -10,12 +10,12 @@ import (
 	"sync"
 	"time"
 
-	discclient "github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/discovery/client"
-	coptions "github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
-	contextAPI "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	fabdiscovery "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/discovery"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/concurrent/lazyref"
+	discclient "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/discovery/client"
+	coptions "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/options"
+	contextAPI "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	fabdiscovery "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/discovery"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/concurrent/lazyref"
 	"github.com/pkg/errors"
 )
 

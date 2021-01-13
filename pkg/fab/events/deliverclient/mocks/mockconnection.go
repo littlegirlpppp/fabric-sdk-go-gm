@@ -12,8 +12,8 @@ import (
 	cb "github.com/hyperledger/fabric-protos-go/common"
 	ab "github.com/hyperledger/fabric-protos-go/orderer"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	clientmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/mocks"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/deliverclient/connection"
+	clientmocks "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/client/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/deliverclient/connection"
 	"github.com/pkg/errors"
 )
 

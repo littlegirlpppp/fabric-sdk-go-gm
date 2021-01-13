@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/test"
-	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/cryptosuite"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/test"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/metadata"
 
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"

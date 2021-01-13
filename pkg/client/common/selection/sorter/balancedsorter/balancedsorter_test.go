@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/selection/balancer"
-	fab "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/selection/balancer"
+	fab "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/mocks"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -12,12 +12,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/channel"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/pathvar"
-	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/channel"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/pathvar"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/integration"
 	"github.com/stretchr/testify/require"
 )
 

@@ -12,11 +12,11 @@ import (
 	"time"
 
 	"github.com/hyperledger/fabric-protos-go/common"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/pkg/errors"
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 const loggerModule = "fabsdk/client"

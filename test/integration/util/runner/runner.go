@@ -11,9 +11,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
-	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/integration"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/metadata"
 )
 
 const (

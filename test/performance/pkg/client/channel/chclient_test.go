@@ -16,18 +16,18 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/testdata"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/channel"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	contextImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
-	fcmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/provider/chpvdr"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/pathvar"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/channel"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	contextImpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
+	fcmocks "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/provider/chpvdr"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/pathvar"
 	"github.com/stretchr/testify/require"
 
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/hyperledger/fabric/common/policydsl"
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/hyperledger/fabric/core/common/ccprovider"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/hyperledger/fabric/common/policydsl"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/hyperledger/fabric/core/common/ccprovider"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
 

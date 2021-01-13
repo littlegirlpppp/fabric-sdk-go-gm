@@ -7,17 +7,17 @@ SPDX-License-Identifier: Apache-2.0
 package invoke
 
 import (
-	selectopts "github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/selection/options"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/peer"
+	selectopts "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/selection/options"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/peer"
 	"github.com/pkg/errors"
 
 	"github.com/golang/protobuf/proto"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/core/ledger/kvledger/txmgmt/rwsetutil"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
 )
 
 var logger = logging.NewLogger("fabsdk/client")

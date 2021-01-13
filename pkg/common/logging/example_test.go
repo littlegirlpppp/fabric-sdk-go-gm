@@ -8,7 +8,7 @@ package logging
 import (
 	"fmt"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/testdata"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/testdata"
 )
 
 var modName = "module-xyz"

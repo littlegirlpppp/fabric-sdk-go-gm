@@ -7,16 +7,16 @@ SPDX-License-Identifier: Apache-2.0
 package defcore
 
 import (
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/api"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/api"
 
-	cryptosuiteimpl "github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/gm"
-	signingMgr "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/signingmgr"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/provider/fabpvdr"
+	cryptosuiteimpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/gm"
+	signingMgr "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/signingmgr"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/provider/fabpvdr"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/modlog"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/modlog"
 )
 
 var logger = logging.NewLogger("fabsdk")

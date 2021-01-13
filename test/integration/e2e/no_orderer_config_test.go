@@ -9,12 +9,12 @@ package e2e
 import (
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/channel"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/channel"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/integration"
 )
 
 // runWithNoOrdererConfig enables chclient scenarios using config and client options provided

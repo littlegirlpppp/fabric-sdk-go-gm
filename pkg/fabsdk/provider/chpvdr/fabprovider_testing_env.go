@@ -11,11 +11,11 @@ package chpvdr
 import (
 	"sync"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/chconfig"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/concurrent/lazyref"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/chconfig"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/concurrent/lazyref"
 	"github.com/pkg/errors"
 )
 

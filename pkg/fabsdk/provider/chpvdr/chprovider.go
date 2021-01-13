@@ -9,13 +9,13 @@ package chpvdr
 import (
 	reqContext "context"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	channelImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/channel"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/chconfig"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	channelImpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/channel"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/chconfig"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
 )
 
 var logger = logging.NewLogger("fabsdk")

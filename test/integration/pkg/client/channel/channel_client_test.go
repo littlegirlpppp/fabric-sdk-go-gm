@@ -13,22 +13,22 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/multi"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/multi"
 
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/channel"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/channel/invoke"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/channel"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/channel/invoke"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/retry"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
-	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/integration"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/metadata"
 )
 
 func TestChannelClient(t *testing.T) {

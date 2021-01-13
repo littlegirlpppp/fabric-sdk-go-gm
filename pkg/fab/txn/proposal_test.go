@@ -19,12 +19,12 @@ import (
 
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/multi"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	mock_context "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
-	mspmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/multi"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	mock_context "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/mocks"
+	mspmocks "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
 )
 

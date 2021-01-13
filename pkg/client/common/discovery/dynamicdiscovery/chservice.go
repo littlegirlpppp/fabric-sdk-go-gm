@@ -7,14 +7,14 @@ SPDX-License-Identifier: Apache-2.0
 package dynamicdiscovery
 
 import (
-	discclient "github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/discovery/client"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/random"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/multi"
-	coptions "github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
-	contextAPI "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	reqContext "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
-	fabdiscovery "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/discovery"
+	discclient "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/discovery/client"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/random"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/multi"
+	coptions "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/options"
+	contextAPI "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	reqContext "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
+	fabdiscovery "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/discovery"
 	"github.com/pkg/errors"
 )
 

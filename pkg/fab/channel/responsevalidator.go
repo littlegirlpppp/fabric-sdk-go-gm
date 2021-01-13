@@ -8,8 +8,8 @@ package channel
 
 import (
 	"github.com/golang/protobuf/proto"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/pkg/errors"
 )
 

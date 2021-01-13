@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/status"
 	"github.com/hyperledger/fabric-protos-go/common"
 	"github.com/stretchr/testify/assert"
 )

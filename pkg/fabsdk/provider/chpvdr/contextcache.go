@@ -7,16 +7,16 @@ SPDX-License-Identifier: Apache-2.0
 package chpvdr
 
 import (
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/discovery/dynamicdiscovery"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/discovery/staticdiscovery"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/selection/dynamicselection"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/selection/fabricselection"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/channel/membership"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/chconfig"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/deliverclient"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/discovery/dynamicdiscovery"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/discovery/staticdiscovery"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/selection/dynamicselection"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/selection/fabricselection"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/channel/membership"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/chconfig"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/deliverclient"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/concurrent/lazycache"
 	"github.com/pkg/errors"
 )
 

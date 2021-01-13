@@ -12,11 +12,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
-	configImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/api"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/modlog"
-	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
+	configImpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/api"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/modlog"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/metadata"
 )
 
 func TestDefLoggerFactory(t *testing.T) {

@@ -7,12 +7,12 @@ SPDX-License-Identifier: Apache-2.0
 package balanced
 
 import (
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/service"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/service"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

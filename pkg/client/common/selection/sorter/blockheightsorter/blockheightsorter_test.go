@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/selection/balancer"
-	fab "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	emocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/mocks"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/selection/balancer"
+	fab "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	emocks "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/client/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/mocks"
 	"github.com/stretchr/testify/assert"
 )
 

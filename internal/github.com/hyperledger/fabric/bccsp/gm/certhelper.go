@@ -5,9 +5,9 @@ import (
 	"crypto/x509"
 	"io"
 	"math/big"
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
 	//todo:国密 gosdk：增加sm2
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 //todo:国密 gosdk：增加gm
 //调用SM2接口生成SM2证书

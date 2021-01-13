@@ -12,9 +12,9 @@ import (
 
 	"sync"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/api"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/metadata"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/testdata"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/api"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/metadata"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/testdata"
 	"github.com/stretchr/testify/assert"
 )
 

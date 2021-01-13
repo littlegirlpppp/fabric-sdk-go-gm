@@ -31,7 +31,7 @@ import (
 	"errors"
 	"fmt"
 	//todo:国密 gosdk：sm2
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 // struct to hold info required for PKCS#8

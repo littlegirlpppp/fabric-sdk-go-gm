@@ -10,9 +10,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/util/pathvar"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/pathvar"
 	"github.com/pkg/errors"
 )
 

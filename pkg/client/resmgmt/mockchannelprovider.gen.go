@@ -4,7 +4,7 @@ package resmgmt
 import (
 	"sync"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
 )
 
 type MockChannelProvider struct {

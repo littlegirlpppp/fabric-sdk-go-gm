@@ -17,22 +17,22 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/discovery/dynamicdiscovery"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/selection/fabricselection"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/resmgmt"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	context2 "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
-	contextImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/context"
-	configImpl "github.com/sunbo/fabric-sdk-go-gm/pkg/core/config"
-	fabDiscovery "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/discovery"
-	discmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/discovery/mocks"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/factory/defsvc"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/provider/chpvdr"
-	mockapisdk "github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk/test/mocksdkapi"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/msp"
-	"github.com/sunbo/fabric-sdk-go-gm/test/metadata"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/discovery/dynamicdiscovery"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/selection/fabricselection"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/resmgmt"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	context2 "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
+	contextImpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
+	configImpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config"
+	fabDiscovery "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/discovery"
+	discmocks "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/discovery/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/factory/defsvc"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/provider/chpvdr"
+	mockapisdk "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/test/mocksdkapi"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/msp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/metadata"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -487,7 +487,7 @@ func TestErrorHandler(t *testing.T) {
 
 	errHandler := func(ctxt fab.ClientContext, channelID string, err error) {
 		//todo this misunderstanding with DiscoveryError will be removed once fabricselection is fixed
-		//https://github.com/sunbo/fabric-sdk-go-gm/pull/62#issuecomment-605343770
+		//https://github.com/littlegirlpppp/fabric-sdk-go-gm/pull/62#issuecomment-605343770
 		selectionDiscoveryErr, selectionOk := errors.Cause(err).(fabricselection.DiscoveryError)
 		dynamicDiscoveryErr, discoveryOk := errors.Cause(err).(dynamicdiscovery.DiscoveryError)
 

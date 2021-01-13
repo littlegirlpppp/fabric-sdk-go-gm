@@ -11,12 +11,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/logging"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/dispatcher"
-	eventservice "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/service"
-	esdispatcher "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/service/dispatcher"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/client/dispatcher"
+	eventservice "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/service"
+	esdispatcher "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/service/dispatcher"
 	"github.com/pkg/errors"
 )
 

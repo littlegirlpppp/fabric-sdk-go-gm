@@ -8,9 +8,9 @@ package discovery
 import (
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
-	"github.com/sunbo/fabric-sdk-go-gm/test/integration/util/runner"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/integration"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/integration/util/runner"
 )
 
 const (

@@ -9,8 +9,8 @@ package cfg
 import (
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/core"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/lookup"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/lookup"
 	"github.com/pkg/errors"
 )
 

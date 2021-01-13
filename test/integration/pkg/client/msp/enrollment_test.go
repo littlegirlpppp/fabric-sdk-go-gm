@@ -12,11 +12,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/msp"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	mspctx "github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fabsdk"
-	"github.com/sunbo/fabric-sdk-go-gm/test/integration"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/msp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	mspctx "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/msp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/test/integration"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 )

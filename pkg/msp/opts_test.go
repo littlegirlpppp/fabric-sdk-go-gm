@@ -9,12 +9,12 @@ package msp
 import (
 	"testing"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
 
-	commtls "github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/comm/tls"
+	commtls "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm/tls"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/msp"
-	logApi "github.com/sunbo/fabric-sdk-go-gm/pkg/core/logging/api"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/msp"
+	logApi "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/api"
 	"github.com/stretchr/testify/require"
 )
 

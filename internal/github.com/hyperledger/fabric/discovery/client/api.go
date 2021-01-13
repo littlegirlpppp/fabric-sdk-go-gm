@@ -12,7 +12,7 @@ package discovery
 
 import (
 	"github.com/hyperledger/fabric-protos-go/discovery"
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/gossip/protoext"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/gossip/protoext"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

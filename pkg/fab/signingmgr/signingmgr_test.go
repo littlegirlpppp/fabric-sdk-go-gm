@@ -10,9 +10,9 @@ import (
 	"bytes"
 	"testing"
 
-	bccspwrapper "github.com/sunbo/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/wrapper"
-	fcmocks "github.com/sunbo/fabric-sdk-go-gm/pkg/fab/mocks"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
+	bccspwrapper "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/cryptosuite/bccsp/wrapper"
+	fcmocks "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/mocks"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/msp/test/mockmsp"
 )
 
 func TestSigningManager(t *testing.T) {

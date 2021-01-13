@@ -21,15 +21,15 @@ import (
 
 	"github.com/hyperledger/fabric-protos-go/common"
 	pb "github.com/hyperledger/fabric-protos-go/peer"
-	"github.com/sunbo/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/protoutil"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/client/common/verifier"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/errors/status"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/comm"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/core/config/endpoint"
-	"github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
-	credentials "github.com/sunbo/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls/gmcredentials"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/protoutil"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/verifier"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/status"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/endpoint"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	credentials "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls/gmcredentials"
 )
 
 const (

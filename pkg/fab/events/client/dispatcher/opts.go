@@ -9,14 +9,14 @@ package dispatcher
 import (
 	"time"
 
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/options"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/context"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/lbp"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/balanced"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/minblockheight"
-	"github.com/sunbo/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/preferorg"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/options"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/context"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/client/lbp"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/balanced"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/minblockheight"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab/events/client/peerresolver/preferorg"
 )
 
 const (
