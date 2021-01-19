@@ -26,8 +26,8 @@ import (
 
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
 
-	cfsslapi  "github.com/cloudflare/cfssl/api"
-	"github.com/cloudflare/cfssl/csr"
+	cfsslapi  "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/api"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/csr"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/client/credential"
 	x509cred "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/client/credential/x509"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/streamer"

@@ -3,7 +3,9 @@
 // SPDX-License-Identifier: Apache-2.0
 
 module github.com/littlegirlpppp/fabric-sdk-go-gm
-
+replace (
+	github.com/cloudflare/cfssl => ./third_party/github.com/cloudflare/cfssl
+)
 require (
 	github.com/Knetic/govaluate v3.0.0+incompatible
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
