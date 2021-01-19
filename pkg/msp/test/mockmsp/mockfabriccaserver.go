@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"time"
 
-	cfsslapi "github.com/cloudflare/cfssl/api"
+	cfsslapi "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/api"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/api"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
