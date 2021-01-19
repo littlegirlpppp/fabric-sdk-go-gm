@@ -6,11 +6,13 @@ module github.com/littlegirlpppp/fabric-sdk-go-gm
 
 replace github.com/cloudflare/cfssl => ./third_party/github.com/cloudflare/cfssl
 
+replace github.com/go-kit/kit => github.com/go-kit/kit v0.8.0
+
 require (
 	github.com/Knetic/govaluate v3.0.0+incompatible
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
 	github.com/cloudflare/cfssl v1.4.1
-	github.com/go-kit/kit v0.8.0
+	github.com/go-kit/kit v0.9.0
 	github.com/golang/mock v1.4.4
 	github.com/golang/protobuf v1.4.2
 	github.com/google/certificate-transparency-go v1.1.1 // indirect
