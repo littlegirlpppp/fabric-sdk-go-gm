@@ -11,7 +11,7 @@ replace github.com/cloudflare/cfssl => ./third_party/github.com/cloudflare/cfssl
 require (
 	github.com/Knetic/govaluate v3.0.0+incompatible
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
-	github.com/cloudflare/cfssl v1.4.1
+	github.com/cloudflare/cfssl v0.0.0-00010101000000-000000000000
 	github.com/go-kit/kit v0.8.0
 	github.com/golang/mock v1.4.4
 	github.com/golang/protobuf v1.3.3
