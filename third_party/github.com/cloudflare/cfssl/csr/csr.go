@@ -12,15 +12,14 @@ import (
 	"encoding/asn1"
 	"encoding/pem"
 	"errors"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 	"net"
 	"net/mail"
 	"net/url"
 	"strings"
-
 	cferr "github.com/cloudflare/cfssl/errors"
 	"github.com/cloudflare/cfssl/helpers"
 	"github.com/cloudflare/cfssl/log"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 const (
