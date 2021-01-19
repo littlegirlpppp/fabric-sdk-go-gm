@@ -8,7 +8,7 @@ import (
 	"crypto/rsa"
 	"crypto/x509"
 
-	cferr "github.com/cloudflare/cfssl/errors"
+	cferr "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/errors"
 	"golang.org/x/crypto/ed25519"
 )
 
