@@ -15,6 +15,7 @@ import (
 	"encoding/pem"
 	"errors"
 	"fmt"
+	"github.com/google/certificate-transparency-go"
 	"io/ioutil"
 	"os"
 
