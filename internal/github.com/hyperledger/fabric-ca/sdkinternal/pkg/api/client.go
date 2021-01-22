@@ -13,7 +13,7 @@ package api
 import (
 	"time"
 
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/csr"
+	"github.com/cloudflare/cfssl/csr"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
 )
 

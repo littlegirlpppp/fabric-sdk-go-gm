@@ -6,8 +6,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/log"
+	"github.com/cloudflare/cfssl/errors"
+	"github.com/cloudflare/cfssl/log"
 )
 
 // Handler is an interface providing a generic mechanism for handling HTTP requests.

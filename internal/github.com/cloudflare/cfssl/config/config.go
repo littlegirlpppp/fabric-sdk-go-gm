@@ -14,11 +14,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/auth"
-	cferr "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/helpers"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/log"
-	ocspConfig "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/ocsp/config"
+	"github.com/cloudflare/cfssl/auth"
+	cferr "github.com/cloudflare/cfssl/errors"
+	"github.com/cloudflare/cfssl/helpers"
+	"github.com/cloudflare/cfssl/log"
+	ocspConfig "github.com/cloudflare/cfssl/ocsp/config"
 	"github.com/zmap/zlint/lints"
 )
 

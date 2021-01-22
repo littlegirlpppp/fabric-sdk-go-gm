@@ -26,10 +26,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/crypto/pkcs7"
-	cferr "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/helpers/derhelpers"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/cloudflare/cfssl/log"
+	"github.com/cloudflare/cfssl/crypto/pkcs7"
+	cferr "github.com/cloudflare/cfssl/errors"
+	"github.com/cloudflare/cfssl/helpers/derhelpers"
+	"github.com/cloudflare/cfssl/log"
 	"golang.org/x/crypto/pkcs12"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
