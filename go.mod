@@ -3,10 +3,12 @@
 // SPDX-License-Identifier: Apache-2.0
 
 module github.com/littlegirlpppp/fabric-sdk-go-gm
+
 replace (
 	github.com/go-kit/kit => github.com/go-kit/kit v0.8.0
 	github.com/golang/protobuf => github.com/golang/protobuf v1.3.3
 )
+
 require (
 	github.com/Knetic/govaluate v3.0.0+incompatible
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
