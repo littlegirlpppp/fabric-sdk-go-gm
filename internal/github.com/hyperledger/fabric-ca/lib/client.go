@@ -26,18 +26,18 @@ import (
 
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
 
-	cfsslapi  "github.com/cloudflare/cfssl/api"
-	"github.com/cloudflare/cfssl/csr"
+	cfsslapi "github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/api"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/csr"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/client/credential"
 	x509cred "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/client/credential/x509"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/streamer"
 	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/gmtls"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/httptransport"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/streamer"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/api"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkinternal/pkg/util"
 	log "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
 	"github.com/mitchellh/mapstructure"
 	"github.com/pkg/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/lib/httptransport"
 )
 
 // Client is the fabric-ca client object

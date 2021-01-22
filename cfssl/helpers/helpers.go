@@ -18,7 +18,6 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/google/certificate-transparency-go"
 	cttls "github.com/google/certificate-transparency-go/tls"
 	ctx509 "github.com/google/certificate-transparency-go/x509"
 	"golang.org/x/crypto/ocsp"
@@ -26,12 +25,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cloudflare/cfssl/crypto/pkcs7"
-	cferr "github.com/cloudflare/cfssl/errors"
-	"github.com/cloudflare/cfssl/helpers/derhelpers"
-	"github.com/cloudflare/cfssl/log"
-	"golang.org/x/crypto/pkcs12"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/crypto/pkcs7"
+	cferr "github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/errors"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/helpers/derhelpers"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/log"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"golang.org/x/crypto/pkcs12"
 )
 
 // OneYear is a time.Duration representing a year's worth of seconds.

@@ -21,7 +21,7 @@ Please review third_party pinning scripts and patches for more details.
 package api
 
 import (
-	"github.com/cloudflare/cfssl/signer"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/signer"
 )
 
 /*

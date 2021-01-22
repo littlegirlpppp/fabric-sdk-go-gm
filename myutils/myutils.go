@@ -26,7 +26,7 @@ type Write struct {
 
 //TransactionInfo 解析后的交易信息
 type TransactionInfo struct {
-	BlockHeight      uint64 `json:"blockheight"`      //区块高度
+	BlockHeight      uint64 `json:"blockheight"`      //区块高度ttt
 	ChannelID        string `json:"channelid"`        //通道名称
 	CreateTime       string `json:"createtime"`       //交易创建时间
 	ChaincodeID      string `json:"chaincodeid"`      //交易调用链码ID
