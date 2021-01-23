@@ -31,7 +31,8 @@ import (
 	"errors"
 	"fmt"
 	//todo:国密 gosdk：sm2
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 )
 
 // struct to hold info required for PKCS#8
@@ -87,7 +88,7 @@ func PrivateKeyToDERSM2(privateKey *sm2.PrivateKey) ([]byte, error) {
 	}
 	//todo:国密 gosdk：sm2
 	//return sm2.MarshalSm2UnecryptedPrivateKey(privateKey)
-	return sm2.MarshalECPrivateKey(privateKey)
+	return gmx509.MarshalECPrivateKey(privateKey)
 }
 
 // PrivateKeyToPEM converts the private key to PEM format.
@@ -163,7 +164,7 @@ func PrivateKeyToPEM(privateKey interface{}, pwd []byte) ([]byte, error) {
 		if k == nil {
 			return nil, errors.New("Invalid sm2 private key. It must be different from nil.")
 		}
-		return sm2.WritePrivateKeytoMem(k, nil)
+		return gmx509.WritePrivateKeytoMem(k, nil)
 	default:
 		return nil, errors.New("Invalid key type. It must be *ecdsa.PrivateKey or *rsa.PrivateKey")
 	}
@@ -225,7 +226,7 @@ func DERToPrivateKey(der []byte) (key interface{}, err error) {
 	}
 
 
-	if key, err := sm2.ParsePKCS8UnecryptedPrivateKey(der); err == nil {
+	if key, err := gmx509.ParsePKCS8UnecryptedPrivateKey(der); err == nil {
 		return key, nil
 	} else {
 		fmt.Printf("error!!!!! %s", err.Error())
@@ -483,7 +484,7 @@ func DERToPublicKey(raw []byte) (pub interface{}, err error) {
 
 	key, err1 := x509.ParsePKIXPublicKey(raw)
 	if err1 != nil {
-		key, err = sm2.ParseSm2PublicKey(raw)
+		key, err =gmx509.ParseSm2PublicKey(raw)
 	}
 
 	return key, err

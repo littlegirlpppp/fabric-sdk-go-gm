@@ -6,10 +6,11 @@ import (
 	"log"
 	"net"
 	"testing"
+	"time"
 
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls/gmcredentials/echo"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )
@@ -27,31 +28,39 @@ func (s *server) Echo(ctx context.Context, req *echo.EchoRequest) (*echo.EchoRes
 	return &echo.EchoResponse{Result: req.Req}, nil
 }
 
-const ca = "testdata/ca.pem"
-const cakey = "testdata/cakey.pem"
+const ca = "testdata/ca.cert"
+const signCert = "testdata/sign.cert"
+const signKey = "testdata/sign.key"
+const encryptCert = "testdata/encrypt.cert"
+const encryptKey = "testdata/encrypt.key"
 
-const admin = "testdata/admin.pem"
-const adminkey = "testdata/adminkey.pem"
+const userCert = "testdata/user.cert"
+const userKey = "testdata/user.key"
 
 func serverRun() {
-	cert, err := gmtls.LoadX509KeyPair(ca, cakey)
+	signCert, err := gmtls.LoadX509KeyPair(signCert, signKey)
 	if err != nil {
 		log.Fatal(err)
 	}
-	certPool := sm2.NewCertPool()
+
+	encryptCert, err := gmtls.LoadX509KeyPair(encryptCert, encryptKey)
+	if err != nil {
+		log.Fatal(err)
+	}
+	certPool := x509.NewCertPool()
 	cacert, err := ioutil.ReadFile(ca)
 	if err != nil {
 		log.Fatal(err)
 	}
 	certPool.AppendCertsFromPEM(cacert)
-
 	lis, err := net.Listen("tcp", port)
 	if err != nil {
 		log.Fatalf("fail to listen: %v", err)
 	}
 	creds := NewTLS(&gmtls.Config{
+		GMSupport:    &gmtls.GMSupport{},
 		ClientAuth:   gmtls.RequireAndVerifyClientCert,
-		Certificates: []gmtls.Certificate{cert},
+		Certificates: []gmtls.Certificate{signCert, encryptCert},
 		ClientCAs:    certPool,
 	})
 	s := grpc.NewServer(grpc.Creds(creds))
@@ -63,20 +72,22 @@ func serverRun() {
 }
 
 func clientRun() {
-	cert, err := gmtls.LoadX509KeyPair(admin, adminkey)
+	cert, err := gmtls.LoadX509KeyPair(userCert, userKey)
 	if err != nil {
 		log.Fatal(err)
 	}
-	certPool := sm2.NewCertPool()
+	certPool := x509.NewCertPool()
 	cacert, err := ioutil.ReadFile(ca)
 	if err != nil {
 		log.Fatal(err)
 	}
 	certPool.AppendCertsFromPEM(cacert)
 	creds := NewTLS(&gmtls.Config{
+		GMSupport:    &gmtls.GMSupport{},
 		ServerName:   "test.example.com",
 		Certificates: []gmtls.Certificate{cert},
 		RootCAs:      certPool,
+		ClientAuth:   gmtls.RequireAndVerifyClientCert,
 	})
 	conn, err := grpc.Dial(address, grpc.WithTransportCredentials(creds))
 	if err != nil {
@@ -99,6 +110,7 @@ func echoTest(c echo.EchoClient) {
 func Test(t *testing.T) {
 	end = make(chan bool, 64)
 	go serverRun()
+	time.Sleep(1000000)
 	go clientRun()
 	<-end
 }

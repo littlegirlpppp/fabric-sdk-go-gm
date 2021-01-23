@@ -13,14 +13,14 @@ import (
 
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	"github.com/pkg/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	"github.com/pkg/errors"
 )
 
 // TLSConfig returns the appropriate config for TLS including the root CAs,
 // certs for mutual TLS, and server host override. Works with certs loaded either from a path or embedded pem.
-func TLSConfig(cert *sm2.Certificate, serverName string, config fab.EndpointConfig) (*tls.Config, error) {
+func TLSConfig(cert *gmx509.Certificate, serverName string, config fab.EndpointConfig) (*tls.Config, error) {
 
 	if cert != nil {
 		config.TLSCACertPool().Add(cert)
@@ -30,7 +30,8 @@ func TLSConfig(cert *sm2.Certificate, serverName string, config fab.EndpointConf
 	if err != nil {
 		return nil, err
 	}
-	return &tls.Config{RootCAs: certPool, Certificates: config.TLSClientCerts(), ServerName: serverName}, nil
+
+	return &tls.Config{GMSupport: &tls.GMSupport{},RootCAs: certPool, Certificates: []tls.Certificate{config.TLSClientCerts()[0],config.TLSClientCerts()[0]}, ServerName: serverName}, nil
 }
 
 // TLSCertHash is a utility method to calculate the SHA256 hash of the configured certificate (for usage in channel headers)

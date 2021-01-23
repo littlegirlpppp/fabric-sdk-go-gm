@@ -7,11 +7,11 @@ SPDX-License-Identifier: Apache-2.0
 package fab
 
 import (
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	// "crypto/x509"
 	"time"
 
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/errors/retry"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 // NetworkConfig provides a static definition of endpoint configuration network
@@ -128,14 +128,14 @@ type OrganizationConfig struct {
 type OrdererConfig struct {
 	URL         string
 	GRPCOptions map[string]interface{}
-	TLSCACert   *sm2.Certificate
+	TLSCACert   *gmx509.Certificate
 }
 
 // PeerConfig defines a peer configuration
 type PeerConfig struct {
 	URL         string
 	GRPCOptions map[string]interface{}
-	TLSCACert   *sm2.Certificate
+	TLSCACert   *gmx509.Certificate
 }
 
 // CertKeyPair contains the private key and certificate

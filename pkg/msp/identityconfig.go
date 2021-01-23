@@ -11,6 +11,7 @@ import (
 
 	"encoding/pem"
 	"fmt"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	"strconv"
 	"strings"
 
@@ -29,7 +30,6 @@ import (
 	logApi "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/logging/api"
 	fabImpl "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fab"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/util/pathvar"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 var defaultCAServerSchema = "https"
@@ -284,7 +284,7 @@ func appendCertsFromPEM(c commtls.CertPool, pemCerts []byte) (ok bool) {
 			continue
 		}
 
-		cert, err := sm2.ParseCertificate(block.Bytes)
+		cert, err := gmx509.ParseCertificate(block.Bytes)
 		if err != nil {
 			continue
 		}

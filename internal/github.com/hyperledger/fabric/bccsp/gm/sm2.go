@@ -10,7 +10,7 @@ import (
 
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
 	//todo:国密 gosdk：sm2
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
 )
 //todo:国密 gosdk：增加gm
 type SM2Signature struct {

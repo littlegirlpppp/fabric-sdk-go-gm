@@ -9,13 +9,13 @@ package endpoint
 import (
 	// "crypto/x509"
 	"encoding/pem"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	"io/ioutil"
 	"strings"
 
 	"regexp"
 
 	"github.com/pkg/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 // IsTLSEnabled is a generic function that expects a URL and verifies if it has
@@ -106,12 +106,12 @@ func (cfg *TLSConfig) LoadBytes() error {
 }
 
 // TLSCert returns the tls certificate as a *x509.Certificate by loading it either from the embedded Pem or Path
-func (cfg *TLSConfig) TLSCert() (*sm2.Certificate, bool, error) {
+func (cfg *TLSConfig) TLSCert() (*gmx509.Certificate, bool, error) {
 
 	block, _ := pem.Decode(cfg.bytes)
 
 	if block != nil {
-		pub, err := sm2.ParseCertificate(block.Bytes)
+		pub, err := gmx509.ParseCertificate(block.Bytes)
 		if err != nil {
 			return nil, false, errors.Wrap(err, "certificate parsing failed")
 		}

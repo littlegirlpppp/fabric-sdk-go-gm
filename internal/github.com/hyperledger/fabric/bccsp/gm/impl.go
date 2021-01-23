@@ -9,7 +9,7 @@ import (
 	"hash"
 	"reflect"
 	//todo:国密 gosdk：sm3
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm3"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm3"
 )
 
 //todo:国密 gosdk：增加gm

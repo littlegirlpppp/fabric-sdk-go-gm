@@ -29,7 +29,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/endpoint"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	credentials "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls/gmcredentials"
 )
 
@@ -46,7 +46,7 @@ type Orderer struct {
 	config         fab.EndpointConfig
 	url            string
 	serverName     string
-	tlsCACert      *sm2.Certificate
+	tlsCACert      *gmx509.Certificate
 	grpcDialOption []grpc.DialOption
 	kap            keepalive.ClientParameters
 	dialTimeout    time.Duration
@@ -83,7 +83,7 @@ func New(config fab.EndpointConfig, opts ...Option) (*Orderer, error) {
 		if err != nil {
 			return nil, err
 		}
-		tlsConfig.VerifyPeerCertificate = func(rawCerts [][]byte, verifiedChains [][]*sm2.Certificate) error {
+		tlsConfig.VerifyPeerCertificate = func(rawCerts [][]byte, verifiedChains [][]*gmx509.Certificate) error {
 			return verifier.VerifyPeerCertificate(rawCerts, verifiedChains)
 		}
 
@@ -112,7 +112,7 @@ func WithURL(url string) Option {
 }
 
 // WithTLSCert is a functional option for the orderer.New constructor that configures the orderer's TLS certificate
-func WithTLSCert(tlsCACert *sm2.Certificate) Option {
+func WithTLSCert(tlsCACert *gmx509.Certificate) Option {
 	return func(o *Orderer) error {
 		o.tlsCACert = tlsCACert
 

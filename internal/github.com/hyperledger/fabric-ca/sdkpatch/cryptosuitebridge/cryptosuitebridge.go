@@ -20,7 +20,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/utils"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
 )
 
 const (

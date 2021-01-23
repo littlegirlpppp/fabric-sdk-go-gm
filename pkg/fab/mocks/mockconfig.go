@@ -7,6 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package mocks
 
 import (
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	// "crypto/tls"
 	"path/filepath"
 	"time"
@@ -21,9 +22,8 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/msp"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
 	commtls "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm/tls"
-	"github.com/pkg/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	"github.com/pkg/errors"
 )
 
 // MockConfig ...
@@ -158,7 +158,7 @@ func (c *MockConfig) TLSCACertPool() commtls.CertPool {
 	} else if c.CustomTLSCACertPool != nil {
 		return c.CustomTLSCACertPool
 	}
-	return &mockfab.MockCertPool{CertPool: sm2.NewCertPool()}
+	return &mockfab.MockCertPool{CertPool: gmx509.NewCertPool()}
 }
 
 // TcertBatchSize ...

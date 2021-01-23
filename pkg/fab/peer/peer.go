@@ -18,7 +18,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/verifier"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")
@@ -27,7 +27,7 @@ var logger = logging.NewLogger("fabsdk/fab")
 // HFC sends endorsement proposals, transaction ordering or query requests.
 type Peer struct {
 	config      fab.EndpointConfig
-	certificate *sm2.Certificate
+	certificate *gmx509.Certificate
 	serverName  string
 	processor   fab.ProposalProcessor
 	mspID       string
@@ -89,7 +89,7 @@ func WithURL(url string) Option {
 }
 
 // WithTLSCert is a functional option for the peer.New constructor that configures the peer's TLS certificate
-func WithTLSCert(certificate *sm2.Certificate) Option {
+func WithTLSCert(certificate *gmx509.Certificate) Option {
 	return func(p *Peer) error {
 		p.certificate = certificate
 

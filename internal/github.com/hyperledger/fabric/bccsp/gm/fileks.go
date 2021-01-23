@@ -14,8 +14,9 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/utils"
 	//todo:国密 gosdk：sm2 sm4
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm4"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm4"
 )
 //todo:国密 gosdk：增加gm
 // NewFileBasedKeyStore instantiated a file-based key store at a given position.
@@ -303,7 +304,7 @@ func (ks *fileBasedKeyStore) loadPrivateKey(alias string) (interface{}, error) {
 	}
 
 	// privateKey, err := utils.PEMtoPrivateKey(raw, ks.pwd)
-	privateKey, err := sm2.ReadPrivateKeyFromMem(raw, nil)
+	privateKey, err := gmx509.ReadPrivateKeyFromMem(raw, nil)
 	if err != nil {
 		fmt.Printf("Failed parsing private key [%s]: [%s].", alias, err.Error())
 
@@ -325,7 +326,7 @@ func (ks *fileBasedKeyStore) loadPublicKey(alias string) (interface{}, error) {
 	}
 
 	// privateKey, err := utils.PEMtoPublicKey(raw, ks.pwd)
-	privateKey, err := sm2.ReadPublicKeyFromMem(raw, nil)
+	privateKey, err := gmx509.ReadPublicKeyFromMem(raw, nil)
 	if err != nil {
 		fmt.Printf("Failed parsing private key [%s]: [%s].", alias, err.Error())
 

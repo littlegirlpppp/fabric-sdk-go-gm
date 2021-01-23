@@ -20,7 +20,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/pkg/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")
@@ -90,7 +90,7 @@ func areCertDatesValid(serializedID []byte) error {
 	if bl == nil {
 		return errors.New("could not decode the PEM structure")
 	}
-	cert, err := sm2.ParseCertificate(bl.Bytes)
+	cert, err := gmx509.ParseCertificate(bl.Bytes)
 	if err != nil {
 		return err
 	}
@@ -222,7 +222,7 @@ func addCertsToConfig(config fab.EndpointConfig, pemCertsList [][]byte) {
 		return
 	}
 
-	var certs []*sm2.Certificate
+	var certs []*gmx509.Certificate
 	for _, pemCerts := range pemCertsList {
 		for len(pemCerts) > 0 {
 			var block *pem.Block
@@ -234,7 +234,7 @@ func addCertsToConfig(config fab.EndpointConfig, pemCertsList [][]byte) {
 				continue
 			}
 
-			cert, err := sm2.ParseCertificate(block.Bytes)
+			cert, err := gmx509.ParseCertificate(block.Bytes)
 			if err != nil {
 				continue
 			}

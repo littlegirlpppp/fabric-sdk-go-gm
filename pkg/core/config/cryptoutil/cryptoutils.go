@@ -17,7 +17,8 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
 	"github.com/pkg/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 	factory "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
 )
@@ -58,7 +59,7 @@ func GetPublicKeyFromCert(cert []byte, cs core.CryptoSuite) (core.Key, error) {
 		return nil, errors.Errorf("Unable to decode cert bytes [%v]", cert)
 	}
 
-	x509Cert, err := sm2.ParseCertificate(dcert.Bytes)
+	x509Cert, err := gmx509.ParseCertificate(dcert.Bytes)
 	if err != nil {
 		return nil, errors.Errorf("Unable to parse cert from decoded bytes: %s", err)
 	}

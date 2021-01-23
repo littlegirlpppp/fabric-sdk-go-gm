@@ -22,6 +22,8 @@ package msp
 
 import (
 	"bytes"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
+
 	// "crypto/ecdsa"
 	// "crypto/x509"
 	"crypto/x509/pkix"
@@ -34,7 +36,7 @@ import (
 	// "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/utils"
 	"github.com/pkg/errors"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/gm"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 )
 
 type validity struct {
@@ -68,18 +70,18 @@ type tbsCertificate struct {
 	Extensions         []pkix.Extension `asn1:"optional,explicit,tag:3"`
 }
 
-func isECDSASignedCert(cert *sm2.Certificate) bool {
-	return cert.SignatureAlgorithm == sm2.ECDSAWithSHA1 ||
-		cert.SignatureAlgorithm == sm2.ECDSAWithSHA256 ||
-		cert.SignatureAlgorithm == sm2.ECDSAWithSHA384 ||
-		cert.SignatureAlgorithm == sm2.ECDSAWithSHA512
+func isECDSASignedCert(cert *gmx509.Certificate) bool {
+	return cert.SignatureAlgorithm == gmx509.ECDSAWithSHA1 ||
+		cert.SignatureAlgorithm == gmx509.ECDSAWithSHA256 ||
+		cert.SignatureAlgorithm == gmx509.ECDSAWithSHA384 ||
+		cert.SignatureAlgorithm == gmx509.ECDSAWithSHA512
 }
 
 // sanitizeECDSASignedCert checks that the signatures signing a cert
 // is in low-S. This is checked against the public key of parentCert.
 // If the signature is not in low-S, then a new certificate is generated
 // that is equals to cert but the signature that is in low-S.
-func sanitizeECDSASignedCert(cert *sm2.Certificate, parentCert *sm2.Certificate) (*sm2.Certificate, error) {
+func sanitizeECDSASignedCert(cert *gmx509.Certificate, parentCert *gmx509.Certificate) (*gmx509.Certificate, error) {
 	if cert == nil {
 		return nil, errors.New("certificate must be different from nil")
 	}
@@ -118,10 +120,10 @@ func sanitizeECDSASignedCert(cert *sm2.Certificate, parentCert *sm2.Certificate)
 	}
 
 	// 4. parse newRaw to get an x509 certificate
-	return sm2.ParseCertificate(newRaw)
+	return gmx509.ParseCertificate(newRaw)
 }
 
-func certFromX509Cert(cert *sm2.Certificate) (certificate, error) {
+func certFromX509Cert(cert *gmx509.Certificate) (certificate, error) {
 	var newCert certificate
 	_, err := asn1.Unmarshal(cert.Raw, &newCert)
 	if err != nil {
@@ -146,7 +148,7 @@ func (c certificate) String() string {
 
 // certToPEM converts the given x509.Certificate to a PEM
 // encoded string
-func certToPEM(certificate *sm2.Certificate) string {
+func certToPEM(certificate *gmx509.Certificate) string {
 	cert, err := certFromSM2Cert(certificate)
 	if err != nil {
 		mspIdentityLogger.Warning("Failed converting certificate to asn1", err)
@@ -155,7 +157,7 @@ func certToPEM(certificate *sm2.Certificate) string {
 	return cert.String()
 }
 
-func certFromSM2Cert(cert *sm2.Certificate) (certificate, error) {
+func certFromSM2Cert(cert *gmx509.Certificate) (certificate, error) {
 	var newCert certificate
 	_, err := asn1.Unmarshal(cert.Raw, &newCert)
 	if err != nil {

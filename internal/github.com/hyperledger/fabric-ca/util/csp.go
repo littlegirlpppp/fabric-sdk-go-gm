@@ -40,7 +40,8 @@ import (
 	log "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
 	"github.com/pkg/errors"
 	//todo:国密 gosdk：sm2 tls
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 )
 
@@ -292,7 +293,7 @@ func LoadX509KeyPairSM2(certFile, keyFile []byte, csp core.CryptoSuite) (*tls.Ce
 		return nil, errors.Errorf("Failed to find \"CERTIFICATE\" PEM block in file %s after skipping PEM blocks of the following types: %v", certFile, skippedBlockTypes)
 	}
 
-	sm2Cert, err := sm2.ParseCertificate(cert.Certificate[0])
+	sm2Cert, err := gmx509.ParseCertificate(cert.Certificate[0])
 	if err != nil {
 		return nil, err
 	}

@@ -16,7 +16,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/pkg/errors"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 )
 
 const loggerModule = "fabsdk/client"
@@ -65,7 +65,7 @@ func (v *Signature) Match(response []*fab.TransactionProposalResponse) error {
 }
 
 //ValidateCertificateDates used to verify if certificate was expired or not valid until later date
-func ValidateCertificateDates(cert *sm2.Certificate) error {
+func ValidateCertificateDates(cert *gmx509.Certificate) error {
 	if cert == nil {
 		return nil
 	}
@@ -80,9 +80,9 @@ func ValidateCertificateDates(cert *sm2.Certificate) error {
 }
 
 //VerifyPeerCertificate verifies raw certs and chain certs for expiry and not yet valid dates
-func VerifyPeerCertificate(rawCerts [][]byte, verifiedChains [][]*sm2.Certificate) error {
+func VerifyPeerCertificate(rawCerts [][]byte, verifiedChains [][]*gmx509.Certificate) error {
 	for _, chaincert := range rawCerts {
-		cert, err := sm2.ParseCertificate(chaincert)
+		cert, err := gmx509.ParseCertificate(chaincert)
 		if err != nil {
 			logger.Warn("Got error while verifying cert")
 		}

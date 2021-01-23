@@ -8,6 +8,8 @@ package comm
 
 import (
 	"context"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+
 	// "crypto/x509"
 	"time"
 
@@ -15,12 +17,11 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/spf13/cast"
 	"google.golang.org/grpc/keepalive"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
 )
 
 type params struct {
 	hostOverride    string
-	certificate     *sm2.Certificate
+	certificate     *gmx509.Certificate
 	keepAliveParams keepalive.ClientParameters
 	failFast        bool
 	insecure        bool
@@ -45,7 +46,7 @@ func WithHostOverride(value string) options.Opt {
 }
 
 // WithCertificate sets the X509 certificate used for the TLS connection
-func WithCertificate(value *sm2.Certificate) options.Opt {
+func WithCertificate(value *gmx509.Certificate) options.Opt {
 	return func(p options.Params) {
 		if setter, ok := p.(certificateSetter); ok {
 			setter.SetCertificate(value)
@@ -104,7 +105,7 @@ func (p *params) SetHostOverride(value string) {
 	p.hostOverride = value
 }
 
-func (p *params) SetCertificate(value *sm2.Certificate) {
+func (p *params) SetCertificate(value *gmx509.Certificate) {
 	if value != nil {
 		logger.Debugf("setting certificate [subject: %s, serial: %s]", value.Subject, value.SerialNumber)
 	} else {
@@ -143,7 +144,7 @@ type hostOverrideSetter interface {
 }
 
 type certificateSetter interface {
-	SetCertificate(value *sm2.Certificate)
+	SetCertificate(value *gmx509.Certificate)
 }
 
 type keepAliveParamsSetter interface {

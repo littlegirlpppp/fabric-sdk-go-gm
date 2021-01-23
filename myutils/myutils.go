@@ -8,7 +8,7 @@ import (
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset"
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset/kvrwset"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/protoutil"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	"time"
 )
 
@@ -92,7 +92,7 @@ func setTransaction(payload*common.Payload,height uint64) (*TransactionInfo,erro
 	if block == nil {
 		return nil, fmt.Errorf("identity could not be decoded from credential")
 	}
-	cert, err := sm2.ParseCertificate(block.Bytes)
+	cert, err := gmx509.ParseCertificate(block.Bytes)
 	if err != nil {
 		return nil, fmt.Errorf("failed to parse certificate: %s", err)
 	}

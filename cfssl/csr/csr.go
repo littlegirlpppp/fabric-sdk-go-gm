@@ -15,7 +15,7 @@ import (
 	cferr "github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/errors"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/helpers"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/log"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	"net"
 	"net/mail"
 	"net/url"
@@ -117,7 +117,7 @@ func (kr *KeyRequest) SigAlgo() x509.SignatureAlgorithm {
 			return x509.ECDSAWithSHA1
 		}
 	case "gmsm2":
-		return x509.SignatureAlgorithm(int(sm2.SM2WithSM3))
+		return x509.SignatureAlgorithm(int(gmx509.SM2WithSM3))
 	default:
 		return x509.UnknownSignatureAlgorithm
 	}
@@ -367,10 +367,10 @@ func Generate(priv crypto.Signer, req *CertificateRequest) (csr []byte, err erro
 		return nil, cferr.New(cferr.PrivateKeyError, cferr.Unavailable)
 	}
 
-	if sigAlgo == x509.SignatureAlgorithm(int(sm2.SM2WithSM3)) {
-		var tpl = sm2.CertificateRequest{
+	if sigAlgo == x509.SignatureAlgorithm(int(gmx509.SM2WithSM3)) {
+		var tpl = gmx509.CertificateRequest{
 			Subject:            req.Name(),
-			SignatureAlgorithm: sm2.SM2WithSM3,
+			SignatureAlgorithm: gmx509.SM2WithSM3,
 		}
 
 		for i := range req.Hosts {
@@ -391,7 +391,7 @@ func Generate(priv crypto.Signer, req *CertificateRequest) (csr []byte, err erro
 			}
 		}
 
-		csr, err = sm2.CreateCertificateRequest(rand.Reader, &tpl, priv)
+		csr, err = gmx509.CreateCertificateRequest(rand.Reader, &tpl, priv)
 		if err != nil {
 			log.Errorf("failed to generate a CSR: %v", err)
 			err = cferr.Wrap(cferr.CSRError, cferr.BadRequest, err)
@@ -464,7 +464,7 @@ func appendCAInfoToCSR(reqConf *CAConfig, csr *x509.CertificateRequest) error {
 	return nil
 }
 
-func appendCAInfoToSm2CSR(reqConf *CAConfig, csr *sm2.CertificateRequest) error {
+func appendCAInfoToSm2CSR(reqConf *CAConfig, csr *gmx509.CertificateRequest) error {
 	pathlen := reqConf.PathLength
 	if pathlen == 0 && !reqConf.PathLenZero {
 		pathlen = -1

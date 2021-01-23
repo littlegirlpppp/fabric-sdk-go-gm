@@ -28,7 +28,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/util"
 	"github.com/pkg/errors"
 	//todo:国密 gosdk：sm2 tls
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 )
 
@@ -40,6 +40,8 @@ var DefaultCipherSuites = []uint16{
 	tls.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,
 	tls.TLS_RSA_WITH_AES_128_GCM_SHA256,
 	tls.TLS_RSA_WITH_AES_256_GCM_SHA384,
+	tls.GMTLS_SM2_WITH_SM4_SM3,
+	tls.GMTLS_ECDHE_SM2_WITH_SM4_SM3,
 }
 
 // ClientTLSConfig defines the key material for a TLS client
@@ -74,10 +76,11 @@ func GetClientTLSConfig(cfg *ClientTLSConfig, csp core.CryptoSuite) (*tls.Config
 		}
 
 		certs = append(certs, *clientCert)
+		certs = append(certs, *clientCert)
 	} else {
 		log.Debug("Client TLS certificate and/or key file not provided")
 	}
-	rootCAPool := sm2.NewCertPool()
+	rootCAPool := gmx509.NewCertPool()
 	if len(cfg.CertFiles) == 0 {
 		return nil, errors.New("No trusted root certificates for TLS were provided")
 	}
@@ -90,6 +93,7 @@ func GetClientTLSConfig(cfg *ClientTLSConfig, csp core.CryptoSuite) (*tls.Config
 	}
 
 	config := &tls.Config{
+		GMSupport: &tls.GMSupport{},
 		Certificates: certs,
 		RootCAs:      rootCAPool,
 	}

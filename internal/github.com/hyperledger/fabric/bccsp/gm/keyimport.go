@@ -9,7 +9,8 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/utils"
 	//todo:国密 gosdk：sm2
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 )
 //todo:国密 gosdk：增加gm
 //实现内部的 KeyImporter 接口
@@ -51,7 +52,7 @@ func (*gmsm2PrivateKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bcc
 	// }
 
 	//gmsm2SK, err :=  sm2.ParseSM2PrivateKey(der)
-	gmsm2SK, err := sm2.ParseSm2PrivateKey(der)
+	gmsm2SK, err := gmx509.ParseSm2PrivateKey(der)
 
 	if err != nil {
 		return nil, fmt.Errorf("Failed converting to GMSM2 private key [%s]", err)
@@ -70,7 +71,7 @@ func (*gmsm2PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bccs
 	if len(der) == 0 {
 		return nil, errors.New("b=>[GMSM2PublicKeyImportOpts] Invalid raw. It must not be nil.")
 	}
-	gmsm2SK, err := sm2.ParseSm2PublicKey(der)
+	gmsm2SK, err := gmx509.ParseSm2PublicKey(der)
 	if err != nil {
 		return nil, fmt.Errorf("c=>Failed converting to GMSM2 public key [%s]", err)
 	}
@@ -143,7 +144,7 @@ func (*ecdsaPKIXPublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts 
 }
 
 func (ki *x509PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bccsp.KeyImportOpts) (k bccsp.Key, err error) {
-	sm2Cert, ok := raw.(*sm2.Certificate)
+	sm2Cert, ok := raw.(*gmx509.Certificate)
 	if !ok {
 		return nil, errors.New("Invalid raw material. Expected *x509.Certificate.")
 	}
@@ -155,7 +156,7 @@ func (ki *x509PublicKeyImportOptsKeyImporter) KeyImport(raw interface{}, opts bc
 		if !ok {
 			return nil, errors.New("Parse interface []  to sm2 pk error")
 		}
-		der, err := sm2.MarshalSm2PublicKey(sm2PublickKey)
+		der, err := gmx509.MarshalSm2PublicKey(sm2PublickKey)
 		if err != nil {
 			return nil, errors.New("MarshalSm2PublicKey error")
 		}

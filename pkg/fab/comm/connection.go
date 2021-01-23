@@ -7,6 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package comm
 
 import (
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	// "crypto/x509"
 	"sync/atomic"
 
@@ -21,8 +22,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/endpoint"
 	"google.golang.org/grpc"
-	// "google.golang.org/grpc/credentials"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+
 	credentials "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls/gmcredentials"
 )
 
@@ -137,7 +137,7 @@ func newDialOpts(config fab.EndpointConfig, url string, params *params) ([]grpc.
 			return nil, err
 		}
 		//verify if certificate was expired or not yet valid
-		tlsConfig.VerifyPeerCertificate = func(rawCerts [][]byte, verifiedChains [][]*sm2.Certificate) error {
+		tlsConfig.VerifyPeerCertificate = func(rawCerts [][]byte, verifiedChains [][]*gmx509.Certificate) error {
 			return verifier.VerifyPeerCertificate(rawCerts, verifiedChains)
 		}
 

@@ -17,7 +17,7 @@ import (
 	commtls "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm/tls"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/metrics"
 	"google.golang.org/grpc"
-	// "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	// "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
 	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
 )
 

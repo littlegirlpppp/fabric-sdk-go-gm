@@ -30,7 +30,8 @@ import (
 	cferr "github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/errors"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/helpers/derhelpers"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/log"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmsm/sm2"
+	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
+	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
 	"golang.org/x/crypto/pkcs12"
 )
 
@@ -465,7 +466,7 @@ func SignerAlgo(priv crypto.Signer) x509.SignatureAlgorithm {
 			return x509.ECDSAWithSHA1
 		}
 	case *sm2.PublicKey:
-		return x509.SignatureAlgorithm(int(sm2.SM2WithSM3))
+		return x509.SignatureAlgorithm(int(gmx509.SM2WithSM3))
 	default:
 		return x509.UnknownSignatureAlgorithm
 	}
@@ -492,6 +493,7 @@ func CreateTLSConfig(remoteCAs *x509.CertPool, cert *tls.Certificate) *tls.Confi
 		certs = []tls.Certificate{*cert}
 	}
 	return &tls.Config{
+
 		Certificates: certs,
 		RootCAs:      remoteCAs,
 	}
