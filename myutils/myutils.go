@@ -9,6 +9,7 @@ import (
 	"github.com/hyperledger/fabric-protos-go/ledger/rwset/kvrwset"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/protoutil"
 	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	"strings"
 	"time"
 )
 
@@ -40,6 +41,12 @@ type TransactionInfo struct {
 	TxID     string   `json:"channelid"` //交易ID
 	ReadSet  []*Read  `json:"channelid"` //读集
 	WriteSet []*Write `json:"channelid"` //写集
+}
+
+// 获取当前区块哈数
+func UnmarshalBlockHash(b *common.BlockHeader) string  {
+	previousBlockHash := protoutil.BlockHeaderHash(b)
+	return fmt.Sprintf("%x", previousBlockHash)
 }
 
 // 解析区块
@@ -145,6 +152,9 @@ func setTransaction(payload*common.Payload,height uint64) (*TransactionInfo,erro
 
 		for _, r := range RWSet.Reads {
 			_read := new(Read)
+			if strings.Index(r.Key,"initialized")>0{
+				continue
+			}
 			_read.Key = r.Key
 			_read.BlockNum = r.Version.BlockNum
 			_read.TxNum = r.Version.TxNum
