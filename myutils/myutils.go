@@ -38,9 +38,9 @@ type TransactionInfo struct {
 	//OUTypes          string   //交易发起者OU分组
 	Args []string `json:"args"` //输入参数
 	//Type             int32    `json:"type"`//交易类型
-	TxID     string   `json:"channelid"` //交易ID
-	ReadSet  []*Read  `json:"channelid"` //读集
-	WriteSet []*Write `json:"channelid"` //写集
+	TxID     string   `json:"txid"` //交易ID
+	ReadSet  []*Read  `json:"readset"` //读集
+	WriteSet []*Write `json:"writeset"` //写集
 }
 
 // 获取当前区块哈数
@@ -156,8 +156,13 @@ func setTransaction(payload*common.Payload,height uint64) (*TransactionInfo,erro
 				continue
 			}
 			_read.Key = r.Key
-			_read.BlockNum = r.Version.BlockNum
-			_read.TxNum = r.Version.TxNum
+			if r.Version==nil{
+				_read.BlockNum=0
+				_read.TxNum =0
+			}else {
+				_read.BlockNum = r.Version.BlockNum
+				_read.TxNum = r.Version.TxNum
+			}
 			reads = append(reads, _read)
 		}
 
@@ -179,15 +184,15 @@ func setTransaction(payload*common.Payload,height uint64) (*TransactionInfo,erro
 		return nil, err
 	}
 	//得到调用的链码的ID，版本和PATH（这里PATH省略了）
-	result.ChaincodeID = chaincodeInvocationSpec.ChaincodeSpec.ChaincodeId.Name
-	result.ChaincodeVersion = chaincode.ChaincodeId.Version
-
 	//得到输入参数
 	var args []string
-	for _, v := range chaincodeInvocationSpec.ChaincodeSpec.Input.Args {
-		args = append(args, string(v))
+	if chaincodeInvocationSpec.ChaincodeSpec!=nil{
+		result.ChaincodeID = chaincodeInvocationSpec.ChaincodeSpec.ChaincodeId.Name
+		result.ChaincodeVersion = chaincode.ChaincodeId.Version
+		for _, v := range chaincodeInvocationSpec.ChaincodeSpec.Input.Args {
+			args = append(args, string(v))
+		}
 	}
-
 	result.Args = args
 	//result.Nonce = signHeader.GetNonce()
 	//result.Type = channelHeader.GetType()
