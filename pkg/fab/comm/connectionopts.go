@@ -8,7 +8,7 @@ package comm
 
 import (
 	"context"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 
 	// "crypto/x509"
 	"time"

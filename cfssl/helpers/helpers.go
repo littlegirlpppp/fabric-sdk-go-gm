@@ -30,8 +30,8 @@ import (
 	cferr "github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/errors"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/helpers/derhelpers"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/log"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	"github.com/littlegirlpppp/gmsm/sm2"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 	"golang.org/x/crypto/pkcs12"
 )
 

@@ -11,7 +11,7 @@ import (
 
 	"encoding/pem"
 	"fmt"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 	"strconv"
 	"strings"
 

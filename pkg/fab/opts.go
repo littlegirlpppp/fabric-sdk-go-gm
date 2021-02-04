@@ -14,7 +14,7 @@ import (
 
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
 	commtls "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm/tls"
-	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	tls "github.com/littlegirlpppp/gmsm/gmtls"
 )
 
 // EndpointConfigOptions represents EndpointConfig interface with overridable interface functions

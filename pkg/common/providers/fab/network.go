@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package fab
 
 import (
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 	// "crypto/x509"
 	"time"
 

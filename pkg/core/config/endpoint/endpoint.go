@@ -9,7 +9,7 @@ package endpoint
 import (
 	// "crypto/x509"
 	"encoding/pem"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 	"io/ioutil"
 	"strings"
 

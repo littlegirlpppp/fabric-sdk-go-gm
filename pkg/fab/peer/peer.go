@@ -18,7 +18,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/client/common/verifier"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/logging"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

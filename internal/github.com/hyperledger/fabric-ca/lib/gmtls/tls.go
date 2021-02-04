@@ -28,8 +28,8 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/util"
 	"github.com/pkg/errors"
 	//todo:国密 gosdk：sm2 tls
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
-	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
+	tls "github.com/littlegirlpppp/gmsm/gmtls"
 )
 
 // DefaultCipherSuites is a set of strong TLS cipher suites

@@ -22,7 +22,7 @@ package msp
 
 import (
 	"bytes"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
+	"github.com/littlegirlpppp/gmsm/sm2"
 
 	// "crypto/ecdsa"
 	// "crypto/x509"
@@ -36,7 +36,7 @@ import (
 	// "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/utils"
 	"github.com/pkg/errors"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp/gm"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 )
 
 type validity struct {

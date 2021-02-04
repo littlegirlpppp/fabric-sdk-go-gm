@@ -17,8 +17,8 @@ import (
 	commtls "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm/tls"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/fabsdk/metrics"
 	"google.golang.org/grpc"
-	// "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
-	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	// "github.com/littlegirlpppp/gmsm/sm2"
+	tls "github.com/littlegirlpppp/gmsm/gmtls"
 )
 
 // ClientContext contains the client context

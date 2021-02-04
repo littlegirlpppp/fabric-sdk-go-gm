@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package comm
 
 import (
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 	// "crypto/x509"
 	"sync/atomic"
 
@@ -23,7 +23,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/endpoint"
 	"google.golang.org/grpc"
 
-	credentials "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls/gmcredentials"
+	credentials "github.com/littlegirlpppp/gmsm/gmtls/gmcredentials"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

@@ -37,9 +37,9 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/helpers"
 	factory "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkpatch/cryptosuitebridge"
 	log "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric-ca/sdkpatch/logbridge"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
-	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
+	"github.com/littlegirlpppp/gmsm/sm2"
+	tls "github.com/littlegirlpppp/gmsm/gmtls"
 	"github.com/pkg/errors"
 )
 

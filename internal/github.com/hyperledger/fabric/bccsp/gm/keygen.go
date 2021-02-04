@@ -3,7 +3,7 @@ package gm
 import (
 	"fmt"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/bccsp"
-	"github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/sm2"
+	"github.com/littlegirlpppp/gmsm/sm2"
 )
 //todo:国密 gosdk：增加gm
 //定义国密SM2 keygen 结构体，实现 KeyGenerator 接口

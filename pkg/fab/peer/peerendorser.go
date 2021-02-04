@@ -28,8 +28,8 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/context"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/endpoint"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
-	credentials "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls/gmcredentials"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
+	credentials "github.com/littlegirlpppp/gmsm/gmtls/gmcredentials"
 )
 
 const (

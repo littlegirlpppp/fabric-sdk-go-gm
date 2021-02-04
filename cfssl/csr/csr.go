@@ -15,7 +15,7 @@ import (
 	cferr "github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/errors"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/helpers"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/cfssl/log"
-gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+gmx509 "github.com/littlegirlpppp/gmsm/x509"
 	"net"
 	"net/mail"
 	"net/url"

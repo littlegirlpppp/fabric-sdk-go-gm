@@ -4,12 +4,11 @@
 
 module github.com/littlegirlpppp/fabric-sdk-go-gm
 
-replace google.golang.org/grpc => google.golang.org/grpc v1.29.1
-
-replace github.com/go-kit/kit => github.com/go-kit/kit v0.8.0
-
-replace github.com/golang/protobuf => github.com/golang/protobuf v1.3.3
-
+replace (
+google.golang.org/grpc => google.golang.org/grpc v1.29.1
+github.com/go-kit/kit => github.com/go-kit/kit v0.8.0
+github.com/golang/protobuf => github.com/golang/protobuf v1.3.3
+)
 require (
 	github.com/Knetic/govaluate v3.0.0+incompatible
 	github.com/VividCortex/gohistogram v1.0.0 // indirect
@@ -21,6 +20,7 @@ require (
 	github.com/hyperledger/fabric-config v0.0.5
 	github.com/hyperledger/fabric-lib-go v1.0.0
 	github.com/hyperledger/fabric-protos-go v0.0.0-20200707132912-fee30f3ccd23
+	github.com/littlegirlpppp/gmsm v0.0.0-20210129065454-c0b82d62a38e
 	github.com/magiconair/properties v1.8.1 // indirect
 	github.com/miekg/pkcs11 v1.0.3
 	github.com/mitchellh/mapstructure v1.3.2
@@ -34,9 +34,9 @@ require (
 	github.com/status-im/keycard-go v0.0.0-20200402102358-957c09536969 // indirect
 	github.com/stretchr/testify v1.6.1
 	github.com/zmap/zlint v1.1.0
-	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
-	golang.org/x/net v0.0.0-20200625001655-4c5254603344
-	google.golang.org/grpc v1.29.1
+	golang.org/x/crypto v0.0.0-20201012173705-84dcc777aaee
+	golang.org/x/net v0.0.0-20201010224723-4f7140c49acb
+	google.golang.org/grpc v1.31.0
 	gopkg.in/yaml.v2 v2.3.0
 )
 

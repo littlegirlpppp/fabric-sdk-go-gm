@@ -13,8 +13,8 @@ import (
 
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/fab"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/cryptosuite"
-	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	tls "github.com/littlegirlpppp/gmsm/gmtls"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 	"github.com/pkg/errors"
 )
 

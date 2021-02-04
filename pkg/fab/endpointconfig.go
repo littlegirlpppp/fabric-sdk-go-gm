@@ -30,8 +30,8 @@ import (
 	"github.com/mitchellh/mapstructure"
 	"github.com/pkg/errors"
 	grpcCodes "google.golang.org/grpc/codes"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
-	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
+	tls "github.com/littlegirlpppp/gmsm/gmtls"
 )
 
 var logger = logging.NewLogger("fabsdk/fab")

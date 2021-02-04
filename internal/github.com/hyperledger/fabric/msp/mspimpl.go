@@ -23,7 +23,7 @@ import (
 	factory "github.com/littlegirlpppp/fabric-sdk-go-gm/internal/github.com/hyperledger/fabric/sdkpatch/cryptosuitebridge"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/core"
 	"github.com/pkg/errors"
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 )
 
 // mspSetupFuncType is the prototype of the setup function

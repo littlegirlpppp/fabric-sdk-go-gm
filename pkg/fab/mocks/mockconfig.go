@@ -7,7 +7,7 @@ SPDX-License-Identifier: Apache-2.0
 package mocks
 
 import (
-	gmx509 "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/x509"
+	gmx509 "github.com/littlegirlpppp/gmsm/x509"
 	// "crypto/tls"
 	"path/filepath"
 	"time"
@@ -22,7 +22,7 @@ import (
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/msp"
 	"github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/common/providers/test/mockfab"
 	commtls "github.com/littlegirlpppp/fabric-sdk-go-gm/pkg/core/config/comm/tls"
-	tls "github.com/littlegirlpppp/fabric-sdk-go-gm/third_party/github.com/tjfoc/gmtls"
+	tls "github.com/littlegirlpppp/gmsm/gmtls"
 	"github.com/pkg/errors"
 )
 
