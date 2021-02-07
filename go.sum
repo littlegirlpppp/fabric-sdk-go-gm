@@ -234,6 +234,8 @@ github.com/letsencrypt/pkcs11key/v4 v4.0.0/go.mod h1:EFUvBDay26dErnNb70Nd0/VW3tJ
 github.com/lib/pq v1.8.0/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
 github.com/littlegirlpppp/gmsm v0.0.0-20210129065454-c0b82d62a38e h1:bDU3jVZBhNw8MylopIxD76QKz+CiBgR5EpqXWBEveoY=
 github.com/littlegirlpppp/gmsm v0.0.0-20210129065454-c0b82d62a38e/go.mod h1:Ixsl2exGwRGs20mBHf0zCGw32l9EEujH5tVICidYjo4=
+github.com/littlegirlpppp/gmsm v0.0.0-20210207081539-28976abeb1e5 h1:dYM3BZ2LN2/2n2uIAtAF2dxfb8JbIBD7dReNtgAJQ+8=
+github.com/littlegirlpppp/gmsm v0.0.0-20210207081539-28976abeb1e5/go.mod h1:Ixsl2exGwRGs20mBHf0zCGw32l9EEujH5tVICidYjo4=
 github.com/magiconair/properties v1.8.0/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czPbwD3XqdrwzmxQ=
 github.com/magiconair/properties v1.8.1 h1:ZC2Vc7/ZFkGmsVC9KvOjumD+G5lXy2RtTKyzRKO2BQ4=
 github.com/magiconair/properties v1.8.1/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czPbwD3XqdrwzmxQ=
